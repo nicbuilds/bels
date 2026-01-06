@@ -164,8 +164,14 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:3.2rem;
       margin-bottom:18px;
+      overflow:hidden;
+    }
+
+    .card-img-inner{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
 
     .rarity{
@@ -303,21 +309,27 @@
     <div class="grid">
       <div class="card">
         <span class="rarity common">COMÚN</span>
-        <div class="card-img">🍰</div>
+        <div class="card-img">
+          <img src="https://nicbuilds.github.io/bels/bels-glutony.png" alt="Gluttony Bels" class="card-img-inner" />
+        </div>
         <h3>Gluttony Bels</h3>
         <p>Nunca hay suficientes pasteles en el infierno.</p>
       </div>
 
       <div class="card">
         <span class="rarity rare">RARO</span>
-        <div class="card-img">👑</div>
+        <div class="card-img">
+          <img src="https://nicbuilds.github.io/bels/bels-pride.png" alt="Pride Bels" class="card-img-inner" />
+        </div>
         <h3>Pride Bels</h3>
         <p>El demonio que sabe que es perfecto.</p>
       </div>
 
       <div class="card">
         <span class="rarity secret">SECRETO</span>
-        <div class="card-img">✨</div>
+        <div class="card-img">
+          <img src="https://nicbuilds.github.io/bels/bels-fallen.png" alt="The Fallen One" class="card-img-inner" />
+        </div>
         <h3>The Fallen One</h3>
         <p>Aparece solo una vez cada cien invocaciones.</p>
       </div>
