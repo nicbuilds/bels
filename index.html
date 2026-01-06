@@ -91,10 +91,16 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:6rem;
       border:6px solid var(--primary);
       box-shadow:0 0 60px var(--primary);
       animation:float 5s ease-in-out infinite;
+      overflow:hidden;
+    }
+
+    .hero-img-inner{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
 
     @keyframes float{
@@ -212,18 +218,10 @@
     gap:30px;
   }
 
-  .hero-visual{
-    order:1;
-  }
+  .hero-visual{order:1}
+  .hero-text{order:2;text-align:center}
 
-  .hero-text{
-    order:2;
-    text-align:center;
-  }
-
-  .hero-text h1{
-    font-size:2.6rem;
-  }
+  .hero-text h1{font-size:2.6rem}
 
   .hero-text p{
     font-size:1rem;
@@ -233,8 +231,8 @@
   .hero-img{
     width:220px;
     height:220px;
-    font-size:4.5rem;
   }
+}
 
   .btn{
     padding:14px 36px;
@@ -285,7 +283,9 @@
 
   <section class="hero">
     <div class="hero-visual">
-      <div class="hero-img">😈</div>
+      <div class="hero-img">
+        <img src="https://nicbuilds.github.io/bels/bels.png" alt="BELS Art Toy" class="hero-img-inner" />
+      </div>
     </div>
     <div class="hero-text">
       <h1>BELS</h1>
